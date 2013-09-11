@@ -33,9 +33,7 @@ trait OrganizationalPerson
     protected $st;
 
     protected $street;
-
-    protected $telephoneNumber;
-
+    
     protected $teletexTerminalIdentifier;
 
     protected $telexNumber;
@@ -84,9 +82,6 @@ Configuration\Manager::defaults('Bread\LDAP\Traits\OrganizationalPerson', array(
             'type' => 'string'
         ),
         'street' => array(
-            'type' => 'string'
-        ),
-        'telephoneNumber' => array(
             'type' => 'string'
         ),
         'teletexTerminalIdentifier' => array(

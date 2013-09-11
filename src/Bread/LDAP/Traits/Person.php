@@ -6,10 +6,8 @@ use Bread\Configuration;
 
 trait Person
 {
-    use Top;
-
-    protected $cn;
-
+    use Top, CommonName;
+    
     protected $sn;
 
     protected $description;
@@ -23,10 +21,6 @@ trait Person
 
 Configuration\Manager::defaults('Bread\LDAP\Traits\Person', array(
     'properties' => array(
-        'cn' => array(
-            'type' => 'string',
-            'required' => true
-        ),
         'sn' => array(
             'type' => 'string',
             'required' => true

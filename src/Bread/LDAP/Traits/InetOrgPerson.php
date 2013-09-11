@@ -64,7 +64,7 @@ trait InetOrgPerson
 }
 
 Configuration\Manager::defaults('Bread\LDAP\Traits\Person', array(
-    'attributes' => array(
+    'properties' => array(
         'audio' => array(
             'type' => 'string'
         ),
@@ -99,7 +99,7 @@ Configuration\Manager::defaults('Bread\LDAP\Traits\Person', array(
             'type' => 'string'
         ),
         'jpegPhoto' => array(
-            'type' => 'string'
+            'type' => 'binary'
         ),
         'labeledURI' => array(
             'type' => 'string'
@@ -135,13 +135,14 @@ Configuration\Manager::defaults('Bread\LDAP\Traits\Person', array(
             'type' => 'string'
         ),
         'userCertificate' => array(
-            'type' => 'string'
+            'type' => 'binary',
+            'multiple' => true
         ),
         'userPKCS12' => array(
-            'type' => 'string'
+            'type' => 'binary'
         ),
         'userSMIMECertificate' => array(
-            'type' => 'string'
+            'type' => 'binary'
         ),
         'x500uniqueIdentifier' => array(
             'type' => 'string'
