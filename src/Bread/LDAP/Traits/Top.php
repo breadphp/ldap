@@ -6,6 +6,8 @@ use Bread\Configuration;
 
 trait Top
 {
+    use Internal;
+    
     protected $objectClass;
 }
 
