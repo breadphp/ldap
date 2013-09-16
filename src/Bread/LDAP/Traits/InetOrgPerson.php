@@ -63,7 +63,7 @@ trait InetOrgPerson
     protected $x500uniqueIdentifier;
 }
 
-Configuration\Manager::defaults('Bread\LDAP\Traits\Person', array(
+Configuration\Manager::defaults('Bread\LDAP\Traits\InetOrgPerson', array(
     'properties' => array(
         'audio' => array(
             'type' => 'string'
