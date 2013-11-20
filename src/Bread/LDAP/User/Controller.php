@@ -38,6 +38,7 @@ class Controller extends REST\Controller implements RFC2616
         }
         foreach ($parameters as $parameter => $value) {
             switch ($parameter) {
+                default:
                     $search[$parameter] = $value;
                     return Model::first($search, $options);
             }
