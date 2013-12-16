@@ -27,7 +27,7 @@ trait Group
 
     protected $mail;
 
-//     protected $managedBy;
+    protected $managedBy;
 
     protected $member;
 
@@ -88,10 +88,10 @@ Configuration\Manager::defaults('Bread\LDAP\Traits\Group', array(
         'managedBy' => array(
             'type' => 'string'
         ),
-//         'member' => array(
-//             'type' => 'string',
-//             'multiple' => true
-//         ),
+        'member' => array(
+            'type' => 'string',
+            'multiple' => true
+        ),
         'nTGroupMembers' => array(
             'type' => 'string',
             'multiple' => true
